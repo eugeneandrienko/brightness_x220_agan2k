@@ -9,6 +9,7 @@ backed by this board, on the Thinkpad via simple console command.
 ** Dependencies
 
 - [[https://github.com/rpm-software-management/popt][libpopt]]
+- [[https://github.com/libusb/hidapi][libhidapi]]
 
 ** Compilation
 
