@@ -1,0 +1,41 @@
+.TH BRIGHTNESS_AGAN2K 1
+.SH NAME
+brightness_agan2k \- Setup brightness for AGAN X230 2K modification board
+.SH SYNOPSIS
+.B brightness_agan2k
+[\fBOPTION\fR]
+.SH DESCRIPTION
+.B brightness_agan2k
+is a program to control brightness for AGAN X230 2K modification board. If
+called without parameters - current brightness value returned.
+.SH OPTIONS
+.TP
+.BR \-b ", "\-\-brightness =\fIBRIGHTNESS\fR
+Brightness value to set. Can take values from 0 to 15.
+.SH EXIT STATUS
+.TP
+.BR 0
+Program exited normally.
+.TP
+.BR 1
+Failed to parse provided console option.
+.TP
+.BR 2
+Failed to open AGAN X230 USB HID device.
+.TP
+.BR 3
+Failed to read brightness value.
+.TP
+.BR 4
+Failed to write brightness value.
+.TP
+.BR 255
+Failed to close libhidapi library.
+.SH FILES
+.TP
+\fI/usr/local/etc/devd/agan.conf\fR
+Devd rule to set proper group on AGAN X230 device file.
+.SH AUTHOR
+Written by Eugene Andrienko.
+.SH REPORTING BUGS
+Report bugs to <https://github.com/eugeneandrienko/brightness_x220_agan2k/issues>
