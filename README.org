@@ -11,6 +11,34 @@ backed by this board, on the Thinkpad via simple console command.
 - [[https://github.com/rpm-software-management/popt][libpopt]]
 - [[https://github.com/libusb/hidapi][libhidapi]]
 
-** Compilation
+To build programm =autotools= and =bash= is necessary.
+
+** Compilation and installation
+
+#+begin_example
+./scripts/autotools.sh
+./configure
+make
+make install
+#+end_example
+
+Last command will install compiled binary and man page.
 
 ** Usage
+
+Brightness from AGAN X230 can take values from 0 to 15.
+
+To read brightness from board just run:
+#+begin_example
+brightness_agan2k
+#+end_example
+
+To write brightness to board:
+#+begin_example
+brightness_agan2k -b 10
+#+end_example
+
+Or:
+#+begin_example
+brightness_agan2k --brightness 10
+#+end_example
