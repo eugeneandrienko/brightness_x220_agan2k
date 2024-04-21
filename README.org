@@ -19,10 +19,15 @@ To build programm =autotools= and =bash= is necessary.
 ./scripts/autotools.sh
 ./configure
 make
-make install
+sudo make install
 #+end_example
 
-Last command will install compiled binary and man page.
+Last command will install compiled binary and man page. Also, it will install
+necessary devd rule to =/usr/local/etc/devd/agan.conf=.
+
+After installation you can reboot computer to apply devd rule. Just a devd
+restart will not work - because AGAN X230 board soldered to motherboard and
+cannot be reconnected. New devd rule will be applied only on system startup.
 
 ** Usage
 
