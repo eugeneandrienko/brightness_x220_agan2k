@@ -1,8 +1,8 @@
 * Brightness control program for AGAN X230 2K modification board
 
 There are exists some 2K modification boards (usually named Agan X230) for
-Lenovo Thinkpad X220: [[https://aliexpress.ru/item/1005004222503527.html][link]]. This program can change 2K display brightness,
-backed by this board, on the Thinkpad via simple console command.
+Lenovo Thinkpad X220/X230: [[https://aliexpress.ru/item/1005004222503527.html][link]]. This program can change 2K display brightness
+via board's USBHID interface.
 
 *Program written only for FreeBSD.*
 
@@ -11,7 +11,7 @@ backed by this board, on the Thinkpad via simple console command.
 - [[https://github.com/rpm-software-management/popt][libpopt]]
 - [[https://github.com/libusb/hidapi][libhidapi]]
 
-To build programm =autotools= and =bash= is necessary.
+To build program =autotools= and =bash= is necessary.
 
 ** Compilation and installation
 
