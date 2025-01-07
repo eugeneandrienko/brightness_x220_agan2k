@@ -1,3 +1,5 @@
+Repo moved to https://codeberg.org/evgandr/brightness_x220_agan2k
+
 * Brightness control program for AGAN X230 2K modification board
 
 There are exists some 2K modification boards (usually named Agan X230) for
